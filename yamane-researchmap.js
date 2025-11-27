@@ -1,8 +1,8 @@
 // yamane-researchmap.js
-// ---------------------------------------------
-// researchmap_data.json（Pythonで取得したローカルJSON）を読み込み、
-// 論文 / 競争的資金 / 受賞 をページに表示するスクリプト
-// ---------------------------------------------
+// researchmap_data.json を読み込み、
+// トップページ: 最近の論文10件（#publist-recent）
+// 論文一覧ページ: 全件（#publist-all）
+// 競争的資金 / 受賞: どのページでもあるところに描画
 
 const DATA_URL = "researchmap_data.json";
 
@@ -67,7 +67,7 @@ function extractYear(dateStr) {
   return dateStr.slice(0, 4);
 }
 
-/** DOI をいい感じに拾う */
+/** DOI を拾う */
 function getDoi(item) {
   if (!item) return "";
   if (item.doi && typeof item.doi === "string") return item.doi;
@@ -82,19 +82,16 @@ function getDoi(item) {
   return "";
 }
 
-/** 論文の描画 */
+/** 論文一覧の描画（recent / all 両対応） */
 function renderPublications(items) {
+  const recentUl = document.getElementById("publist-recent");
   const allUl = document.getElementById("publist-all");
-  const selUl = document.getElementById("publist-selected");
-  if (!allUl && !selUl) return;
+  if (!recentUl && !allUl) return;
 
   if (!Array.isArray(items)) items = [];
 
-  // 一旦全部そのまま使う
-  let filtered = items.slice();
-
-  // 発行日の新しい順（date が無いものは後ろへ）
-  filtered.sort((a, b) => {
+  // ソート（新しい順）
+  const filtered = items.slice().sort((a, b) => {
     const da = a.publication_date || "";
     const db = b.publication_date || "";
     return db.localeCompare(da);
@@ -102,7 +99,6 @@ function renderPublications(items) {
 
   console.log("publications:", filtered.length);
 
-  // li を作る
   const makeLi = (item) => {
     const li = document.createElement("li");
 
@@ -115,7 +111,6 @@ function renderPublications(items) {
     const authors = formatAuthors(item.authors || item.author);
     const doi = getDoi(item);
 
-    // ページ情報（いくつかのパターンを試す）
     let pages = "";
     if (item.page_range) {
       pages = item.page_range;
@@ -147,16 +142,18 @@ function renderPublications(items) {
     return li;
   };
 
-  // 代表的な論文: major_achievement が true のものがあればそれを、なければ上位 6 件
-  if (selUl) {
-    let selected = filtered.filter((it) => it.major_achievement === true);
-    if (!selected.length) selected = filtered.slice(0, 6);
-    selected.forEach((item) => selUl.appendChild(makeLi(item)));
+  // トップページ: 最近10件
+  if (recentUl) {
+    filtered.slice(0, 10).forEach((item) => {
+      recentUl.appendChild(makeLi(item));
+    });
   }
 
-  // 最近の論文: 上位 30 件
+  // 論文一覧ページ: 全件
   if (allUl) {
-    filtered.slice(0, 30).forEach((item) => allUl.appendChild(makeLi(item)));
+    filtered.forEach((item) => {
+      allUl.appendChild(makeLi(item));
+    });
   }
 }
 
@@ -167,9 +164,7 @@ function renderGrants(items) {
 
   if (!Array.isArray(items)) items = [];
 
-  let filtered = items.slice();
-
-  filtered.sort((a, b) => {
+  const filtered = items.slice().sort((a, b) => {
     const da = a.from_date || "";
     const db = b.from_date || "";
     return db.localeCompare(da);
@@ -218,9 +213,7 @@ function renderAwards(items) {
 
   if (!Array.isArray(items)) items = [];
 
-  let filtered = items.slice();
-
-  filtered.sort((a, b) => {
+  const filtered = items.slice().sort((a, b) => {
     const da = a.award_date || "";
     const db = b.award_date || "";
     return db.localeCompare(da);
@@ -253,7 +246,7 @@ function renderAwards(items) {
   });
 }
 
-/** すべてをまとめて実行 */
+/** まとめて実行 */
 async function renderAllFromLocalJson() {
   try {
     const data = await loadResearchmapData();

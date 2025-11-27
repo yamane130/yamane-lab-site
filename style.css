@@ -12,6 +12,9 @@ header {
   padding: 16px 24px 8px;
   border-bottom: 1px solid #ddd;
   background: #fafafa;
+  position: sticky; /* ← 追加 */
+  top: 0;           /* ← 追加 */
+  z-index: 1000;    /* ← 追加（上に重ねるため） */
 }
 
 h1 {
