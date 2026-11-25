@@ -7,7 +7,7 @@ name: Publish lab site
     branches: [main]
   workflow_dispatch:
   schedule:
-    # 05:17 JST. Scheduled builds are skipped until RESEARCHMAP_SYNC is true.
+    # 05:17 JST. Set RESEARCHMAP_SYNC=false to pause scheduled refreshes.
     - cron: '17 20 * * *'
 
 permissions: {}
@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ github.event_name != 'schedule' || vars.RESEARCHMAP_SYNC == 'true' }}
+    if: ${{ github.event_name != 'schedule' || vars.RESEARCHMAP_SYNC != 'false' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
@@ -34,18 +34,18 @@ jobs:
         with:
           python-version: '3.12'
 
-      # Enable this repository variable after confirming researchmap API usage.
+      # Refresh by default; RESEARCHMAP_SYNC=false opts out. PRs stay offline.
       - name: Refresh public researchmap records
-        if: ${{ github.event_name != 'pull_request' && vars.RESEARCHMAP_SYNC == 'true' }}
+        if: ${{ github.event_name != 'pull_request' && vars.RESEARCHMAP_SYNC != 'false' }}
         timeout-minutes: 5
         run: |
           python fetch_researchmap.py
           printf '%s\n' '### データ取得' 'researchmap の公開データを取得しました。このデータからサイトを生成します。' >> "$GITHUB_STEP_SUMMARY"
 
       - name: Report use of saved data
-        if: ${{ github.event_name == 'pull_request' || vars.RESEARCHMAP_SYNC != 'true' }}
+        if: ${{ github.event_name == 'pull_request' || vars.RESEARCHMAP_SYNC == 'false' }}
         run: |
-          printf '%s\n' '### データ取得' '保存済みの researchmap データを使用します。この実行では researchmap へアクセスしていません。' 'API 連携を有効にするには、利用条件を確認したうえで repository variable `RESEARCHMAP_SYNC` を `true` に設定してください。Pull Request では常に保存済みデータを使用します。' >> "$GITHUB_STEP_SUMMARY"
+          printf '%s\n' '### データ取得' '保存済みの researchmap データを使用します。この実行では researchmap へアクセスしていません。' 'Pull Request では常に保存済みデータを使用します。それ以外では repository variable `RESEARCHMAP_SYNC=false` の場合のみ同期を停止します。再開するには変数を削除するか `true` に設定してください。' >> "$GITHUB_STEP_SUMMARY"
 
       - name: Build static website
         run: python build_site.py --output-dir _site

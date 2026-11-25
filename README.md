@@ -21,7 +21,7 @@
 3. **Actions → Publish lab site → Run workflow** で `main` を選んで実行します。
 4. 成功後、公開サイトの論文一覧と「書誌情報の取得日時」を確認します。
 
-最初は同梱の `researchmap_data.json` を使って公開します。API同期は次の設定を有効にするまで動きません。これは、既存データだけでもビルド・表示を確認できるようにするためです。
+API同期は既定で有効です。`main` からの公開時には最新のresearchmapデータを取得します。保存済みデータだけで確認する場合は、後述の `RESEARCHMAP_SYNC=false` を設定するか、ローカルでビルドしてください。
 
 設定方法の根拠：[GitHub Pagesのカスタムワークフロー](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
 
@@ -31,13 +31,14 @@
 
 researchmap Web APIの継続利用について、[公式の利用申請案内](https://researchmap.jp/public/other-document/application)と利用条件を確認してください。すでに利用手続きが済んでいれば、その条件に合わせて設定します。匿名で公開データを取得できることと、継続的なAPI利用の手続きは別です。
 
-GitHubの **Settings → Secrets and variables → Actions → Variables** で、次のrepository variableを設定します。
+定期取得は既定で有効で、repository variableの追加設定は不要です。停止・再開したい場合は、GitHubの **Settings → Secrets and variables → Actions → Variables** で `RESEARCHMAP_SYNC` を設定します。
 
-| Name | Value |
+| `RESEARCHMAP_SYNC` の値 | 動作 |
 | --- | --- |
-| `RESEARCHMAP_SYNC` | `true` |
+| 未設定、または `true` | 最新データの取得と日次の自動公開を有効にします。 |
+| `false` | 日次実行をスキップします。手動実行・`main` への変更では保存済みデータだけで公開します。 |
 
-有効にすると、`main` への変更、`main` を指定した手動実行、日次スケジュールで最新の公開データを取得してサイトへ反映します。pull requestの検証時にはAPIに接続しません。
+有効な状態では、`main` への変更、`main` を指定した手動実行、日次スケジュールで最新の公開データを取得してサイトへ反映します。pull requestの検証時にはAPIに接続しません。
 
 - 通常：researchmapを更新すると、次回の定期実行でサイトにも反映されます。
 - 早く反映したい場合：**Actions → Publish lab site → Run workflow → main** を実行します。
