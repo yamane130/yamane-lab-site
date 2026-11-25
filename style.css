@@ -77,6 +77,39 @@ ul {
   padding-left: 1.5rem;
 }
 
+#publist-recent li,
+#publist-all li,
+#grants-list li,
+#awards-list li {
+  margin-bottom: 1rem;
+  overflow-wrap: anywhere;
+}
+
+a:focus-visible {
+  outline: 2px solid #0057aa;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  header {
+    position: static;
+    padding: 16px;
+  }
+
+  main {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h1 span {
+    display: block;
+    margin-left: 0 !important;
+  }
+}
+
 /* フッター */
 footer {
   border-top: 1px solid #ddd;
