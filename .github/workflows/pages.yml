@@ -1,0 +1,73 @@
+name: Publish lab site
+
+"on":
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # 05:17 JST. Scheduled builds are skipped until RESEARCHMAP_SYNC is true.
+    - cron: '17 20 * * *'
+
+permissions: {}
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: ${{ github.event_name != 'schedule' || vars.RESEARCHMAP_SYNC == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+
+      # Enable this repository variable after confirming researchmap API usage.
+      - name: Refresh public researchmap records
+        if: ${{ github.event_name != 'pull_request' && vars.RESEARCHMAP_SYNC == 'true' }}
+        timeout-minutes: 5
+        run: |
+          python fetch_researchmap.py
+          printf '%s\n' '### データ取得' 'researchmap の公開データを取得しました。このデータからサイトを生成します。' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Report use of saved data
+        if: ${{ github.event_name == 'pull_request' || vars.RESEARCHMAP_SYNC != 'true' }}
+        run: |
+          printf '%s\n' '### データ取得' '保存済みの researchmap データを使用します。この実行では researchmap へアクセスしていません。' 'API 連携を有効にするには、利用条件を確認したうえで repository variable `RESEARCHMAP_SYNC` を `true` に設定してください。Pull Request では常に保存済みデータを使用します。' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Build static website
+        run: python build_site.py --output-dir _site
+
+      - name: Upload website artifact
+        if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

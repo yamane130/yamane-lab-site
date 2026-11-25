@@ -1,6 +1,793 @@
 {
   "published_papers": [
     {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/55331188",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "55331188",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-10-25T09:03:49Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-10-25T09:03:49Z",
+      "paper_title": {
+        "en": "A Navigable 360-Degree Image Record of a Railway Bridge Damaged by Cyclone Ditwah in Sri Lanka"
+      },
+      "authors": {
+        "en": [
+          {
+            "name": "Tatsuro Yamane"
+          },
+          {
+            "name": "Shiori Kubo"
+          },
+          {
+            "name": "Naomichi Katayama"
+          },
+          {
+            "name": "Yu Chen"
+          },
+          {
+            "name": "Pang-jo Chun"
+          }
+        ]
+      },
+      "published_paper_owner_roles": [
+        "lead",
+        "corresponding"
+      ],
+      "publication_date": "2027",
+      "publication_name": {
+        "en": "Intelligence, Informatics and Infrastructure"
+      },
+      "volume": "Accepted",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/51851485",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "51851485",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2025-12-13T17:28:50Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-11-25T09:29:19Z",
+      "paper_title": {
+        "en": "Enhancing the Quality of 3D Reconstruction of Structures from Spherical Images Using Image Generation Models"
+      },
+      "authors": {
+        "en": [
+          {
+            "name": "Taichi Kawamura"
+          },
+          {
+            "name": "Keitaro Taniguchi"
+          },
+          {
+            "name": "Mai Monde"
+          },
+          {
+            "name": "Pang-jo Chun"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          }
+        ]
+      },
+      "published_paper_owner_roles": [
+        "last",
+        "corresponding"
+      ],
+      "publisher": {
+        "en": "Springer Singapore"
+      },
+      "publication_date": "2027",
+      "publication_name": {
+        "en": "Proceedings of the 16th International Conference on Sustainable Built Environment (Lecture Notes in Civil Engineering) ［forthcoming］"
+      },
+      "volume": "866",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "international_conference_proceedings",
+      "rm:is_open_access": false
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/55486305",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "55486305",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-11-16T06:53:04Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-11-24T07:29:01Z",
+      "paper_title": {
+        "ja": "スマートフォンを用いて取得した橋梁の点群データセットの構築とセマンティックセグメンテーションの評価"
+      },
+      "authors": {
+        "ja": [
+          {
+            "name": "板倉 健太"
+          },
+          {
+            "name": "山根 達郎"
+          },
+          {
+            "name": "久保 栞"
+          },
+          {
+            "name": "浅野 和香奈"
+          },
+          {
+            "name": "岩城 一郎"
+          },
+          {
+            "name": "稲富 翔伍"
+          },
+          {
+            "name": "片山 直道"
+          },
+          {
+            "name": "折本 聖也"
+          },
+          {
+            "name": "全 邦釘"
+          }
+        ]
+      },
+      "publication_date": "2026-11",
+      "publication_name": {
+        "ja": "AI・データサイエンス論文集"
+      },
+      "volume": "7",
+      "number": "3",
+      "starting_page": "1353",
+      "ending_page": "1366",
+      "languages": [
+        "jpn"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.11532/jsceiii.7.3_1353"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.11532/jsceiii.7.3_1353",
+          "is_downloadable": false
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/55004231",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "55004231",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-09-20T10:10:31Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-11-24T07:20:34Z",
+      "paper_title": {
+        "ja": "オンプレミス型大規模言語モデルを用いた対話型数値解析システムの構築",
+        "en": "Development of an Interactive Numerical Analysis System Using On-Premises Large Language Models"
+      },
+      "authors": {
+        "ja": [
+          {
+            "name": "有馬 佑月希"
+          },
+          {
+            "name": "山根 達郎"
+          }
+        ],
+        "en": [
+          {
+            "name": "Yuzuki Arima"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          }
+        ]
+      },
+      "published_paper_owner_roles": [
+        "last",
+        "corresponding"
+      ],
+      "publication_date": "2026-11",
+      "publication_name": {
+        "ja": "土木学会論文集",
+        "en": "Japanese Journal of JSCE"
+      },
+      "volume": "82",
+      "number": "11",
+      "starting_page": "25-00270",
+      "languages": [
+        "jpn"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.2208/jscejj.25-00270"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.2208/jscejj.25-00270",
+          "is_downloadable": false
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/54871005",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "54871005",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "external:ORCID",
+      "rm:creator_type": "trusted_institution",
+      "rm:created": "2026-09-08T00:16:15Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-09-15T09:25:40Z",
+      "paper_title": {
+        "en": "Structure-oriented deep learning for semantic segmentation of bridge point clouds"
+      },
+      "authors": {
+        "en": [
+          {
+            "name": "Yu Chen"
+          },
+          {
+            "name": "Chao Lin"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          },
+          {
+            "name": "Shiori Kubo"
+          },
+          {
+            "name": "Pang-jo Chun"
+          }
+        ]
+      },
+      "publication_date": "2026-09",
+      "publication_name": {
+        "en": "Automation in Construction"
+      },
+      "volume": "192",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.1016/j.autcon.2026.107243"
+        ],
+        "orcid_put_cd": [
+          "226017613"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.1016/j.autcon.2026.107243",
+          "is_downloadable": false
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/54460213",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "54460213",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-07-23T11:02:11Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-10-03T11:25:38Z",
+      "paper_title": {
+        "en": "Field Recording of Slope Failures Associated with Cyclone Ditwah in Kandy, Sri Lanka, Using a 360-Degree Image-Based Information Management System"
+      },
+      "authors": {
+        "en": [
+          {
+            "name": "Shiori Kubo"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          },
+          {
+            "name": "Naomichi Katayama"
+          },
+          {
+            "name": "Yu Chen"
+          },
+          {
+            "name": "Pang-jo Chun"
+          }
+        ]
+      },
+      "publication_date": "2026-07",
+      "publication_name": {
+        "en": "Proceedings of the11th International Symposium on Advances in Civil and Environmental Engineering Practices for Sustainable Development"
+      },
+      "starting_page": "231",
+      "ending_page": "238",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "international_conference_proceedings",
+      "rm:is_open_access": false
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/50382911",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "50382911",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2025-06-12T09:58:57Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-07-12T10:56:11Z",
+      "paper_title": {
+        "en": "Automated 3D Bridge Modeling from Non-Layered Drawings Using Transformer-Based Deep Learning"
+      },
+      "authors": {
+        "en": [
+          {
+            "name": "Keitaro Taniguchi"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          }
+        ]
+      },
+      "published_paper_owner_roles": [
+        "last",
+        "corresponding"
+      ],
+      "publication_date": "2026-06",
+      "publication_name": {
+        "en": "Artificial Intelligence Applications in Engineering and Medicine, Proceedings of the 2nd Olympiad in Engineering Science"
+      },
+      "starting_page": "726",
+      "ending_page": "733",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "international_conference_proceedings",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.1007/978-3-032-19744-3_54"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.1007/978-3-032-19744-3_54",
+          "is_downloadable": false
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/50382903",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "50382903",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2025-06-12T09:55:51Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-07-12T10:57:58Z",
+      "paper_title": {
+        "en": "Multi-scale Spatial Position Encoding for Enhanced Feature Learning in Bridge Point Cloud Semantic Segmentation"
+      },
+      "authors": {
+        "en": [
+          {
+            "name": "Yu Chen"
+          },
+          {
+            "name": "Chao Lin"
+          },
+          {
+            "name": "Shiori Kubo"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          },
+          {
+            "name": "Wakana Asano"
+          },
+          {
+            "name": "Ichiro Iwaki"
+          },
+          {
+            "name": "Pang-jo Chun"
+          }
+        ]
+      },
+      "publication_date": "2026-06",
+      "publication_name": {
+        "en": "Artificial Intelligence Applications in Engineering and Medicine, Proceedings of the 2nd Olympiad in Engineering Science"
+      },
+      "starting_page": "716",
+      "ending_page": "725",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "international_conference_proceedings",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.1007/978-3-032-19744-3_53"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.1007/978-3-032-19744-3_53",
+          "is_downloadable": false
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/52941600",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "52941600",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-03-15T14:20:06Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-05-26T01:50:26Z",
+      "paper_title": {
+        "ja": "Vision Language Modelによる生成結果の再帰的修正に基づく橋梁図面からの3次元モデル構築",
+        "en": "Automatic 3D Model Construction from Bridge Drawings via Recursive Refinement of Generated Outputs with a Vision-Language Model"
+      },
+      "authors": {
+        "ja": [
+          {
+            "name": "谷口 慶太郎"
+          },
+          {
+            "name": "山根 達郎"
+          }
+        ],
+        "en": [
+          {
+            "name": "Keitaro Taniguchi"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          }
+        ]
+      },
+      "published_paper_owner_roles": [
+        "last",
+        "corresponding"
+      ],
+      "publication_date": "2026-05",
+      "publication_name": {
+        "ja": "AI・データサイエンス論文集",
+        "en": "Artificial Intelligence and Data Science"
+      },
+      "volume": "7",
+      "number": "1",
+      "starting_page": "349",
+      "ending_page": "357",
+      "languages": [
+        "jpn"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.11532/jsceiii.7.1_349"
+        ],
+        "rm:research_project_id": [
+          "48093547",
+          "46484230"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.11532/jsceiii.7.1_349",
+          "is_downloadable": false
+        },
+        {
+          "@id": "https://api.researchmap.jp/t_yamane/research_projects/48093547",
+          "label": "rm:research_project_id"
+        },
+        {
+          "@id": "https://api.researchmap.jp/t_yamane/research_projects/46484230",
+          "label": "rm:research_project_id"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/52558460",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "52558460",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-03-05T07:56:11Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-06-30T13:30:17Z",
+      "paper_title": {
+        "ja": "Multimodal Large Language Modelを活用した構造物の新規視点画像の自動生成",
+        "en": "Automatic Novel-View Image Generation of Structures Using a Multimodal Large Language Model"
+      },
+      "authors": {
+        "ja": [
+          {
+            "name": "小野嶋 珠璃"
+          },
+          {
+            "name": "谷口 慶太郎"
+          },
+          {
+            "name": "山根 達郎"
+          }
+        ],
+        "en": [
+          {
+            "name": "Shuri Onojima"
+          },
+          {
+            "name": "Keitaro Taniguchi"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          }
+        ]
+      },
+      "published_paper_owner_roles": [
+        "last",
+        "corresponding"
+      ],
+      "publication_date": "2026-05",
+      "publication_name": {
+        "ja": "AI・データサイエンス論文集",
+        "en": "Artificial Intelligence and Data Science"
+      },
+      "volume": "7",
+      "number": "1",
+      "starting_page": "315",
+      "ending_page": "322",
+      "languages": [
+        "jpn"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.11532/jsceiii.7.1_315"
+        ],
+        "rm:research_project_id": [
+          "46484230"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.11532/jsceiii.7.1_315",
+          "is_downloadable": false
+        },
+        {
+          "@id": "https://api.researchmap.jp/t_yamane/research_projects/46484230",
+          "label": "rm:research_project_id"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/52180027",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "52180027",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-02-10T09:42:08Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-03-31T15:29:58Z",
+      "paper_title": {
+        "ja": "Transformerを活用した図面寸法の意味解釈による橋梁の3次元モデル自動構築",
+        "en": "AUTOMATED 3D BRIDGE MODELING USING TRANSFORMER-BASED SEMANTIC INTERPRETATION OF DRAWING DIMENSION ANNOTATIONS"
+      },
+      "authors": {
+        "ja": [
+          {
+            "name": "谷口 慶太郎"
+          },
+          {
+            "name": "山根 達郎"
+          }
+        ],
+        "en": [
+          {
+            "name": "Keitaro Taniguchi"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          }
+        ]
+      },
+      "published_paper_owner_roles": [
+        "last",
+        "corresponding"
+      ],
+      "publication_date": "2026-03",
+      "publication_name": {
+        "ja": "土木学会論文集",
+        "en": "Japanese Journal of JSCE"
+      },
+      "volume": "82",
+      "number": "22",
+      "starting_page": "25-22008",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.2208/jscejj.25-22008"
+        ],
+        "rm:research_project_id": [
+          "48093547",
+          "46484230"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "doi",
+          "@id": "https://doi.org/10.2208/jscejj.25-22008",
+          "is_downloadable": false
+        },
+        {
+          "@id": "https://api.researchmap.jp/t_yamane/research_projects/48093547",
+          "label": "rm:research_project_id"
+        },
+        {
+          "@id": "https://api.researchmap.jp/t_yamane/research_projects/46484230",
+          "label": "rm:research_project_id"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/published_papers/55530086",
+      "@type": "published_papers",
+      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
+      "rm:id": "55530086",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-11-24T07:28:31Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-11-24T07:28:31Z",
+      "paper_title": {
+        "en": "Construction of a Bridge Point Cloud Dataset Acquired Using a Smartphone and Evaluation of Semantic Segmentation"
+      },
+      "authors": {
+        "en": [
+          {
+            "name": "Kenta Itakura"
+          },
+          {
+            "name": "Tatsuro Yamane"
+          },
+          {
+            "name": "Shiori Kubo"
+          },
+          {
+            "name": "Wakana Asano"
+          },
+          {
+            "name": "Ichiro Iwaki"
+          },
+          {
+            "name": "Shogo Inadomi"
+          },
+          {
+            "name": "Naomichi Katayama"
+          },
+          {
+            "name": "Seiya Orimoto"
+          },
+          {
+            "name": "Takumi Murai"
+          },
+          {
+            "name": "Pang-jo Chun"
+          }
+        ]
+      },
+      "publication_date": "2026",
+      "publication_name": {
+        "en": "CMES-Computer Modeling in Engineering & Sciences"
+      },
+      "volume": "Accepted",
+      "languages": [
+        "eng"
+      ],
+      "referee": true,
+      "published_paper_type": "scientific_journal",
+      "rm:is_open_access": false
+    },
+    {
       "@id": "https://api.researchmap.jp/t_yamane/published_papers/51657273",
       "@type": "published_papers",
       "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
@@ -13,9 +800,10 @@
       "rm:created": "2025-11-14T11:17:19Z",
       "rm:modifier_id": "R000001168",
       "rm:modifier_type": "myself",
-      "rm:modified": "2025-11-14T11:19:32Z",
+      "rm:modified": "2026-06-30T13:31:37Z",
       "paper_title": {
-        "ja": "3次元モデルとAIが創る新たなインフラの世界"
+        "ja": "3次元モデルとAIが創る新たなインフラの世界",
+        "en": "A New Era of Infrastructure Created by 3D Models and AI"
       },
       "authors": {
         "ja": [
@@ -67,11 +855,62 @@
           {
             "name": "矢吹 信喜"
           }
+        ],
+        "en": [
+          {
+            "name": "Makoto OHYA"
+          },
+          {
+            "name": "Ji DANG"
+          },
+          {
+            "name": "Tatsuro YAMANE"
+          },
+          {
+            "name": "Nao HIDAKA"
+          },
+          {
+            "name": "Shoji UEDA"
+          },
+          {
+            "name": "Keiichi OKI"
+          },
+          {
+            "name": "Shinya KANDA"
+          },
+          {
+            "name": "Sachiho KAWABE"
+          },
+          {
+            "name": "Teruaki KITAGAWA"
+          },
+          {
+            "name": "Aoi KOGA"
+          },
+          {
+            "name": "Ken’ichi SANO"
+          },
+          {
+            "name": "Yuuto TAKAZAWA"
+          },
+          {
+            "name": "Yoshihiko TODA"
+          },
+          {
+            "name": "Kinya HASHIMOTO"
+          },
+          {
+            "name": "Junichiro FUJII"
+          },
+          {
+            "name": "Nobuyoshi YABUKI"
+          }
         ]
       },
       "publication_date": "2025-11",
       "publication_name": {
-        "ja": "AI・データサイエンス論文集"
+        "ja": "AI・データサイエンス論文集",
+        "en": "Artificial Intelligence and Data Science"
       },
       "volume": "6",
       "number": "3",
@@ -83,10 +922,15 @@
       "referee": true,
       "published_paper_type": "scientific_journal",
       "rm:is_open_access": false,
+      "identifiers": {
+        "doi": [
+          "10.11532/jsceiii.6.3_1094"
+        ]
+      },
       "see_also": [
         {
+          "label": "doi",
           "@id": "https://doi.org/10.11532/jsceiii.6.3_1094",
-          "label": "url",
           "is_downloadable": false
         }
       ]
@@ -347,101 +1191,6 @@
       ]
     },
     {
-      "@id": "https://api.researchmap.jp/t_yamane/published_papers/50382911",
-      "@type": "published_papers",
-      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
-      "rm:id": "50382911",
-      "rm:user_id": "R000001168",
-      "display": "disclosed",
-      "major_achievement": false,
-      "rm:creator_id": "R000001168",
-      "rm:creator_type": "myself",
-      "rm:created": "2025-06-12T09:58:57Z",
-      "rm:modifier_id": "R000001168",
-      "rm:modifier_type": "myself",
-      "rm:modified": "2025-06-12T09:58:57Z",
-      "paper_title": {
-        "en": "Automated 3D Bridge Modeling from Non-Layered Drawings Using Transformer-Based Deep Learning"
-      },
-      "authors": {
-        "en": [
-          {
-            "name": "Keitaro Taniguchi"
-          },
-          {
-            "name": "Tatsuro Yamane"
-          }
-        ]
-      },
-      "published_paper_owner_roles": [
-        "last",
-        "corresponding"
-      ],
-      "publication_date": "2025-06",
-      "publication_name": {
-        "en": "Proceedings of the 2nd Olympiad in Engineering Science"
-      },
-      "languages": [
-        "eng"
-      ],
-      "referee": true,
-      "published_paper_type": "international_conference_proceedings",
-      "rm:is_open_access": false
-    },
-    {
-      "@id": "https://api.researchmap.jp/t_yamane/published_papers/50382903",
-      "@type": "published_papers",
-      "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
-      "rm:id": "50382903",
-      "rm:user_id": "R000001168",
-      "display": "disclosed",
-      "major_achievement": false,
-      "rm:creator_id": "R000001168",
-      "rm:creator_type": "myself",
-      "rm:created": "2025-06-12T09:55:51Z",
-      "rm:modifier_id": "R000001168",
-      "rm:modifier_type": "myself",
-      "rm:modified": "2025-06-12T09:55:51Z",
-      "paper_title": {
-        "en": "Multi-scale Spatial Position Encoding for Enhanced Feature Learning in Bridge Point Cloud Semantic Segmentation"
-      },
-      "authors": {
-        "en": [
-          {
-            "name": "Yu Chen"
-          },
-          {
-            "name": "Chao Lin"
-          },
-          {
-            "name": "Shiori Kubo"
-          },
-          {
-            "name": "Tatsuro Yamane"
-          },
-          {
-            "name": "Wakana Asano"
-          },
-          {
-            "name": "Ichiro Iwaki"
-          },
-          {
-            "name": "Pang-jo Chun"
-          }
-        ]
-      },
-      "publication_date": "2025-06",
-      "publication_name": {
-        "en": "Proceedings of the 2nd Olympiad in Engineering Science"
-      },
-      "languages": [
-        "eng"
-      ],
-      "referee": true,
-      "published_paper_type": "international_conference_proceedings",
-      "rm:is_open_access": false
-    },
-    {
       "@id": "https://api.researchmap.jp/t_yamane/published_papers/50338550",
       "@type": "published_papers",
       "@reverse": "https://api.researchmap.jp/t_yamane/published_papers",
@@ -454,9 +1203,10 @@
       "rm:created": "2025-06-06T03:59:55Z",
       "rm:modifier_id": "R000001168",
       "rm:modifier_type": "myself",
-      "rm:modified": "2025-11-29T06:52:49Z",
+      "rm:modified": "2026-03-05T09:08:35Z",
       "paper_title": {
-        "ja": "360度カメラ画像を活用したインフラ構造物の点検情報管理システムの構築"
+        "ja": "360度カメラ画像を活用したインフラ構造物の点検情報管理システムの構築",
+        "en": "Development of an Inspection Information Management System for Infrastructures using Spherical Images"
       },
       "authors": {
         "ja": [
@@ -481,6 +1231,29 @@
           {
             "name": "全 邦釘"
           }
+        ],
+        "en": [
+          {
+            "name": "Tatsuro YAMANE"
+          },
+          {
+            "name": "Yu CHEN"
+          },
+          {
+            "name": "Shiori KUBO"
+          },
+          {
+            "name": "Wakana ASANO"
+          },
+          {
+            "name": "Naomichi KATAYAMA"
+          },
+          {
+            "name": "Ichiro IWAKI"
+          },
+          {
+            "name": "Pang-jo CHUN"
+          }
         ]
       },
       "published_paper_owner_roles": [
@@ -488,7 +1261,8 @@
       ],
       "publication_date": "2025-05",
       "publication_name": {
-        "ja": "AI・データサイエンス論文集"
+        "ja": "AI・データサイエンス論文集",
+        "en": "Artificial Intelligence and Data Science"
       },
       "volume": "6",
       "number": "1",
@@ -660,7 +1434,7 @@
       "rm:created": "2023-03-07T03:31:53Z",
       "rm:modifier_id": "R000001168",
       "rm:modifier_type": "myself",
-      "rm:modified": "2025-03-04T11:39:37Z",
+      "rm:modified": "2026-05-26T01:52:19Z",
       "paper_title": {
         "en": "Deep learning-based bridge damage cause estimation from multiple images using visual question answering"
       },
@@ -691,8 +1465,10 @@
       "publication_name": {
         "en": "Structure and Infrastructure Engineering"
       },
-      "starting_page": "1",
-      "ending_page": "14",
+      "volume": "22",
+      "number": "4",
+      "starting_page": "734",
+      "ending_page": "747",
       "languages": [
         "eng"
       ],
@@ -721,7 +1497,7 @@
         },
         {
           "label": "DBLP",
-          "@id": "https://dblp.uni-trier.de/rec/journals/corr/abs-2302-09208",
+          "@id": "https://dblp.org/rec/journals/corr/abs-2302-09208",
           "is_downloadable": false
         },
         {
@@ -807,9 +1583,10 @@
       "rm:created": "2023-11-15T13:23:38Z",
       "rm:modifier_id": "R000001168",
       "rm:modifier_type": "myself",
-      "rm:modified": "2023-11-15T13:23:38Z",
+      "rm:modified": "2026-03-05T09:09:18Z",
       "paper_title": {
-        "ja": "大規模言語モデルと画像セグメンテーションによる専門知識融合型土砂災害危険性判断手法"
+        "ja": "大規模言語モデルと画像セグメンテーションによる専門知識融合型土砂災害危険性判断手法",
+        "en": "Domain knowledge integration method for landslide disaster risk assessment by a large language model and image segmentation"
       },
       "authors": {
         "ja": [
@@ -825,11 +1602,26 @@
           {
             "name": "全 邦釘"
           }
+        ],
+        "en": [
+          {
+            "name": "Shogo INADOMI"
+          },
+          {
+            "name": "Tatsuro YAMANE"
+          },
+          {
+            "name": "Hiroyuki KANASAKI"
+          },
+          {
+            "name": "Pang-jo CHUN"
+          }
         ]
       },
       "publication_date": "2023-11",
       "publication_name": {
-        "ja": "AI・データサイエンス論文集"
+        "ja": "AI・データサイエンス論文集",
+        "en": "Artificial Intelligence and Data Science"
       },
       "volume": "4",
       "number": "3",
@@ -3203,11 +3995,95 @@
   ],
   "research_projects": [
     {
+      "@id": "https://api.researchmap.jp/t_yamane/research_projects/54721733",
+      "@type": "research_projects",
+      "@reverse": "https://api.researchmap.jp/t_yamane/research_projects",
+      "rm:id": "54721733",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-08-24T09:44:34Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-08-24T09:44:34Z",
+      "research_project_title": {
+        "ja": "インフラ点検を能動的にガイドするフィジカルAIの開発"
+      },
+      "investigators": {
+        "ja": [
+          {
+            "name": "全 邦釘"
+          },
+          {
+            "name": "山根 達郎"
+          },
+          {
+            "name": "久保 栞"
+          },
+          {
+            "name": "宮本 崇"
+          },
+          {
+            "name": "陳 瑜"
+          }
+        ]
+      },
+      "offer_organization": {
+        "ja": "国土交通省"
+      },
+      "system_name": {
+        "ja": "政策課題解決型技術開発公募（一般タイプ）R8新規"
+      },
+      "from_date": "2026-04",
+      "to_date": "2028-03",
+      "research_project_owner_role": "coinvestigator"
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/research_projects/53485162",
+      "@type": "research_projects",
+      "@reverse": "https://api.researchmap.jp/t_yamane/research_projects",
+      "rm:id": "53485162",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": false,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-04-27T12:24:23Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-04-27T12:25:13Z",
+      "research_project_title": {
+        "ja": "AIを用いた道路橋設計図書からの 3 次元モデル自動構築技術の開発と山口県における地域実装"
+      },
+      "investigators": {
+        "ja": [
+          {
+            "name": "山根 達郎"
+          }
+        ]
+      },
+      "offer_organization": {
+        "ja": "土木学会"
+      },
+      "system_name": {
+        "ja": "2025年度新技術の地域実装に向けた研究活動助成"
+      },
+      "institution_name": {
+        "ja": "徳山工業高等専門学校"
+      },
+      "from_date": "2026-04",
+      "to_date": "2027-03",
+      "research_project_owner_role": "principal_investigator"
+    },
+    {
       "@id": "https://api.researchmap.jp/t_yamane/research_projects/48093547",
       "@type": "research_projects",
       "@reverse": "https://api.researchmap.jp/t_yamane/research_projects",
       "rm:id": "48093547",
       "rm:user_id": "R000001168",
+      "identifiers_id_modified": "2026-10-23 00:27:13",
       "display": "disclosed",
       "major_achievement": false,
       "rm:creator_id": "R000001168",
@@ -3215,16 +4091,52 @@
       "rm:created": "2024-10-03T05:32:08Z",
       "rm:modifier_id": "R000001168",
       "rm:modifier_type": "myself",
-      "rm:modified": "2024-10-03T05:32:08Z",
+      "rm:modified": "2026-04-27T12:26:16Z",
       "research_project_title": {
         "ja": "既設構造物図面からの3次元モデルの自動生成による維持管理システムの構築"
       },
+      "investigators": {
+        "ja": [
+          {
+            "name": "山根 達郎"
+          }
+        ]
+      },
       "offer_organization": {
-        "ja": "山口県建設技術センター 令和6～8年度官学共同研究"
+        "ja": "山口県建設技術センター"
+      },
+      "system_name": {
+        "ja": "令和6～8年度官学共同研究"
+      },
+      "institution_name": {
+        "ja": "徳山工業高等専門学校"
       },
       "from_date": "2024-04",
       "to_date": "2027-03",
-      "research_project_owner_role": "principal_investigator"
+      "research_project_owner_role": "principal_investigator",
+      "identifiers": {
+        "rm:published_paper_id": [
+          "52941600",
+          "52180027"
+        ],
+        "rm:presentation_id": [
+          "55318372"
+        ]
+      },
+      "see_also": [
+        {
+          "label": "rm:published_papers",
+          "@id": "https://api.researchmap.jp/t_yamane/published_papers/52941600"
+        },
+        {
+          "label": "rm:published_papers",
+          "@id": "https://api.researchmap.jp/t_yamane/published_papers/52180027"
+        },
+        {
+          "label": "rm:presentations",
+          "@id": "https://api.researchmap.jp/t_yamane/presentations/55318372"
+        }
+      ]
     },
     {
       "@id": "https://api.researchmap.jp/t_yamane/research_projects/46484230",
@@ -3232,6 +4144,7 @@
       "@reverse": "https://api.researchmap.jp/t_yamane/research_projects",
       "rm:id": "46484230",
       "rm:user_id": "R000001168",
+      "identifiers_id_modified": "2026-06-30 13:30:17",
       "display": "disclosed",
       "major_achievement": false,
       "rm:creator_id": "R000001168",
@@ -3275,12 +4188,29 @@
         ],
         "national_grant_number": [
           "JP24K17333"
+        ],
+        "rm:published_paper_id": [
+          "52941600",
+          "52558460",
+          "52180027"
         ]
       },
       "see_also": [
         {
           "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K17333",
           "label": "kaken"
+        },
+        {
+          "label": "rm:published_papers",
+          "@id": "https://api.researchmap.jp/t_yamane/published_papers/52941600"
+        },
+        {
+          "label": "rm:published_papers",
+          "@id": "https://api.researchmap.jp/t_yamane/published_papers/52558460"
+        },
+        {
+          "label": "rm:published_papers",
+          "@id": "https://api.researchmap.jp/t_yamane/published_papers/52180027"
         }
       ]
     },
@@ -3345,6 +4275,76 @@
     }
   ],
   "awards": [
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/awards/54235627",
+      "@type": "awards",
+      "@reverse": "https://api.researchmap.jp/t_yamane/awards",
+      "rm:id": "54235627",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": true,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2026-06-24T08:00:29Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2026-06-24T08:01:02Z",
+      "award_name": {
+        "ja": "デジタルツイン・DX論文賞"
+      },
+      "winners": {
+        "ja": [
+          {
+            "name": "小野嶋 珠璃"
+          },
+          {
+            "name": "谷口 慶太郎"
+          },
+          {
+            "name": "山根 達郎"
+          }
+        ]
+      },
+      "award_title": {
+        "ja": "Multimodal Large Language Model を活用した構造物の新規視点画像の自動生成"
+      },
+      "association": {
+        "ja": "土木学会 構造工学委員会"
+      },
+      "award_date": "2026-06"
+    },
+    {
+      "@id": "https://api.researchmap.jp/t_yamane/awards/51851487",
+      "@type": "awards",
+      "@reverse": "https://api.researchmap.jp/t_yamane/awards",
+      "rm:id": "51851487",
+      "rm:user_id": "R000001168",
+      "display": "disclosed",
+      "major_achievement": true,
+      "rm:creator_id": "R000001168",
+      "rm:creator_type": "myself",
+      "rm:created": "2025-12-13T17:32:46Z",
+      "rm:modifier_id": "R000001168",
+      "rm:modifier_type": "myself",
+      "rm:modified": "2025-12-13T17:33:25Z",
+      "award_name": {
+        "en": "Award for the Best Presenter in the special session of Digital Transformation in Sustainable Construction"
+      },
+      "winners": {
+        "en": [
+          {
+            "name": "Tatsuro Yamane"
+          }
+        ]
+      },
+      "award_title": {
+        "en": "Enhancing the Quality of 3D Reconstruction of Structures from Spherical Images Using Image Generation Models"
+      },
+      "association": {
+        "en": "ICSBE 2025"
+      },
+      "award_date": "2025-12"
+    },
     {
       "@id": "https://api.researchmap.jp/t_yamane/awards/50338575",
       "@type": "awards",
@@ -3584,13 +4584,13 @@
       "rm:id": "31116973",
       "rm:user_id": "R000001168",
       "display": "disclosed",
-      "major_achievement": true,
+      "major_achievement": false,
       "rm:creator_id": "R000001168",
       "rm:creator_type": "myself",
       "rm:created": "2020-12-05T09:38:56Z",
       "rm:modifier_id": "R000001168",
       "rm:modifier_type": "myself",
-      "rm:modified": "2025-06-06T04:03:47Z",
+      "rm:modified": "2026-06-24T08:01:11Z",
       "award_name": {
         "ja": "AI・データサイエンス論文賞",
         "en": "Intelligence, Informatics and Infrastructure Excellent Paper Award"
@@ -3756,5 +4756,11 @@
       },
       "award_date": "2016-05"
     }
-  ]
+  ],
+  "_meta": {
+    "fetched_at": "2026-11-25T10:45:27.021852Z",
+    "source_profile_url": "https://researchmap.jp/t_yamane",
+    "source_api_url": "https://api.researchmap.jp/t_yamane",
+    "schema_version": 1
+  }
 }
